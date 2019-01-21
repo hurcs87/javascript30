@@ -69,3 +69,30 @@ Already refactored
           OR use spread method
 
       const links = [...category.querySelectorAll('a')];
+
+#### Question seven :
+
+Already refactored
+
+#### Question eight :
+
+Returns the list
+```
+const transportation = data.reduce(function(obj, item) {
+  console.log(item);
+  return obj;
+}, {})
+```
+```
+const transportation = data.reduce(function(obj, item) {
+```
+If there is no obj in item , then obj is = to 0, else obj +1
+```
+  if(!obj[item]) {
+    obj[item] = 0;
+  }
+  obj[item]++;
+  return obj;
+}, {})
+```
+The {} at the end is a blank object.
